@@ -12,66 +12,94 @@
 
 body{
 margin:0;
-background:#f6f6f6;
+background:#ececec;
 font-family: Arial, Helvetica, sans-serif;
 color:#111;
 }
 
-.wrapper{
-max-width:1000px;
-margin:auto;
+.page{
+max-width:1050px;
+margin:60px auto;
 background:white;
-padding:40px 40px 60px 40px;
-box-shadow:0 10px 30px rgba(0,0,0,0.05);
+padding:50px;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+
+video{
+width:100%;
+border-radius:6px;
+margin-bottom:40px;
 }
 
 .header{
 text-align:center;
-margin-top:20px;
+margin-bottom:40px;
 }
 
 h1{
-font-size:40px;
-letter-spacing:2px;
+font-size:42px;
+letter-spacing:3px;
 margin-bottom:10px;
 }
 
 .subtitle{
 font-size:18px;
 color:#555;
-margin-bottom:30px;
-}
-
-video{
-width:100%;
-border-radius:6px;
-margin-bottom:30px;
 }
 
 .button{
 display:inline-block;
-padding:15px 28px;
+padding:15px 30px;
 background:black;
 color:white;
 text-decoration:none;
-font-size:17px;
 border-radius:4px;
-margin-top:10px;
+margin-top:25px;
+font-size:17px;
 }
 
 .section{
-margin-top:60px;
+margin-top:70px;
 }
 
 .section h2{
-font-size:26px;
-margin-bottom:30px;
 text-align:center;
+font-size:28px;
+margin-bottom:35px;
+}
+
+.description{
+max-width:700px;
+margin:auto;
+line-height:1.8;
+font-size:18px;
+text-align:center;
+color:#333;
+}
+
+.features{
+margin-top:40px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+max-width:800px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.feature{
+font-size:16px;
+color:#444;
+}
+
+.reviews{
+max-width:750px;
+margin:auto;
 }
 
 .review{
-margin-bottom:40px;
-line-height:1.6;
+margin-bottom:35px;
+line-height:1.7;
 }
 
 .review-title{
@@ -87,19 +115,24 @@ margin-top:6px;
 
 footer{
 text-align:center;
-margin-top:60px;
+margin-top:70px;
 font-size:14px;
 color:#777;
 }
 
 @media(max-width:768px){
 
-.wrapper{
+.page{
+margin:0;
 padding:30px 20px;
 }
 
+.features{
+grid-template-columns:1fr;
+}
+
 h1{
-font-size:30px;
+font-size:32px;
 }
 
 }
@@ -110,7 +143,7 @@ font-size:30px;
 
 <body>
 
-<div class="wrapper">
+<div class="page">
 
 <video controls>
 <source src="video1.mp4" type="video/mp4">
@@ -133,8 +166,46 @@ Consultar disponibilidad
 
 <div class="section">
 
+<h2>La experiencia Límite Pop</h2>
+
+<div class="description">
+
+Más de nueve años sobre los escenarios y más de setecientos conciertos avalan a Límite Pop como una de las bandas de versiones más sólidas del panorama nacional.
+
+Su propuesta combina elegancia, energía y un repertorio cuidadosamente seleccionado para crear momentos inolvidables en eventos privados de alto nivel.
+
+Cada actuación es única: más de 250 canciones del mejor pop, rock e indie en español permiten adaptar el repertorio a cada ocasión, creando una experiencia musical a medida.
+
+</div>
+
+<div class="features">
+
+<div class="feature">
+Más de <b>9 años de experiencia</b> en directo.
+</div>
+
+<div class="feature">
+Más de <b>700 conciertos</b> realizados.
+</div>
+
+<div class="feature">
+Repertorio de <b>250 canciones</b> de pop, rock e indie español.
+</div>
+
+<div class="feature">
+Posibilidad de <b>elegir el repertorio</b> para cada evento.
+</div>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
 <h2>Opiniones</h2>
 
+<div class="reviews">
 
 <div class="review">
 
@@ -157,7 +228,7 @@ José Manuel · 01-12-2025
 ★★★★★ 100% recomendable
 </div>
 
-Si quieres una banda de versiones con amplio repertorio e ir a lo seguro, los recomendamos. Vinieron a nuestra boda y nos lo hicieron pasar en grande. Muy buen sonido y genial interacción con los invitados. Si tuviéramos que elegir de nuevo, sería a Límite Pop.
+Si quieres una banda de versiones con amplio repertorio e ir a lo seguro, los recomendamos. Vinieron a nuestra boda y nos lo hicieron pasar en grande. Muy buen sonido y genial interacción con los invitados.
 
 <div class="review-client">
 Raquel y Pablo · 08-09-2025
@@ -172,7 +243,7 @@ Raquel y Pablo · 08-09-2025
 ★★★★★ Muy recomendable
 </div>
 
-Muy recomendable la actuación de LÍMITE POP. Desde el inicio en conversación con Javier, contratación y elección de canciones. El día del evento salió redondo, todos los invitados bailando y cantando.
+Muy recomendable la actuación de LÍMITE POP. Desde la contratación hasta el día del evento todo fue perfecto. Todos los invitados bailando y cantando.
 
 <div class="review-client">
 Alberto · 26-07-2025
@@ -197,9 +268,10 @@ Javier · 17-07-2025
 
 </div>
 
+</div>
 
 
-<div class="section" id="contacto" style="text-align:center;">
+<div class="section" id="contacto" style="text-align:center">
 
 <h2>¿Estás organizando un evento?</h2>
 
